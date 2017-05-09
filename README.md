@@ -10,7 +10,7 @@ On Linux systems `make` set `gcc` as default compiler, while on Mac OSX is set t
 ### Usage
 
 The executable `argon2`runs a specific Argon2 instance. To show usage instructions, run
-`./argon2` or `./argon2 -h` as
+`./argon2` or `./argon2 -h`:
 
 ```
 Usage: [-h] [-P password] [-S salt] [-K secret key] [-X associated data] [-m memory] [-t iterations] [-p parallelism] [-l hash length] [-i|-d] 
@@ -28,9 +28,7 @@ Parameters:
 	-d		    Use Argon2d instead of Argon2i
 	-h		    Print help
 ```
-For example, if you want to hash "password" using "somesalt" as a salt and doing 2
-iterations, consuming 64 MiB, using four parallel threads and an output hash
-of 24 bytes
+For example, if you want to hash the string "password" using "somesalt" as a salt, doing 2 iterations, consuming 64 MB, using 4 parallel threads to get an output hash of 24 bytes, use:
 ```
 $ ./argon2 -P "password" -S "somesalt" -t 2 -m 65536 -p 4 -l 24
 =======================================
