@@ -1,6 +1,6 @@
 # argon2
 A C implementation of the [Password Hashing Competition](https://password-hashing.net/) winner [Argon2](https://github.com/p-h-c/phc-winner-argon2) hash function. Compared to the official implementation, the code tries to be clearer and easier to follow according to the algorithm [specifications](https://github.com/P-H-C/phc-winner-argon2/blob/master/argon2-specs.pdf). 
-The Argon2 version implemented is 0x13. The sources contains an ad-hoc version of the [blake2b](https://blake2.net/) hash function.
+The Argon2 version implemented is 0x13. The sources contain also an ad-hoc version of [blake2b](https://blake2.net/) used as internal hash function by Argon2.
 
 The code is thought for academic purpose and is not optimized. 
 
