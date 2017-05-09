@@ -1,9 +1,9 @@
 # argon2
-A C implementation of the [Password Hashing Competition](https://password-hashing.net/) winner [Argon2](https://github.com/p-h-c/phc-winner-argon2) hash function. Compared to the official implementation, the code tries to be clearer
+A C implementation of the [Password Hashing Competition](https://password-hashing.net/) winner [Argon2](https://github.com/p-h-c/phc-winner-argon2) hash function. Compared to the official implementation, the code tries to be clearer and easier to follow according to the algorithm [specifications](https://github.com/P-H-C/phc-winner-argon2/blob/master/argon2-specs.pdf). The code is thought for academic purpose and is not optimized. The Argon2 version implemented is 0x13.
 
 ## Makefile
 
-`make` builds the executable `argon2` whilts `make clean` removes it. The [OpenMP](http://www.openmp.org/) library is needed to compile the sources.
+`make` builds the executable `argon2` while `make clean` removes it. The [OpenMP](http://www.openmp.org/) library is needed to compile the sources.
 
 On Linux systems `make` set `gcc` as default compiler, while on Mac OSX is set to `gcc-6`.
 
